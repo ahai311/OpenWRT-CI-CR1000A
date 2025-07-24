@@ -1,18 +1,10 @@
+
 #科学插件调整
 CONFIG_PACKAGE_luci-app-homeproxy=y
-# CONFIG_PACKAGE_luci-app-passwall=n
+CONFIG_PACKAGE_luci-app-passwall=y
 # CONFIG_PACKAGE_luci-app-passwall2=n
 # CONFIG_PACKAGE_luci-app-nikki=n
-# CONFIG_PACKAGE_luci-app-openclash=n
-#Docker 支持
-CONFIG_PACKAGE_dockerd=y
-CONFIG_PACKAGE_luci-app-dockerman=y
-CONFIG_PACKAGE_kmod-overlayfs=y
-CONFIG_PACKAGE_kmod-veth=y
-CONFIG_PACKAGE_kmod-br-netfilter=y
-CONFIG_PACKAGE_kmod-libcgroup=y
-CONFIG_PACKAGE_kmod-nf-nat=y
-CONFIG_PACKAGE_kmod-nf-conntrack=y
+CONFIG_PACKAGE_luci-app-openclash=y
 #增加插件
 CONFIG_PACKAGE_luci-app-autoreboot=y
 # CONFIG_PACKAGE_luci-app-gecoosac=n
@@ -80,11 +72,6 @@ CONFIG_PACKAGE_kmod-wireguard=y
 CONFIG_PACKAGE_kmod-spi-dev=y
 #添加devmem协助RTL9303的lan口正常工作
 CONFIG_KERNEL_DEVMEM=y
-#网络驱动模块
-CONFIG_PACKAGE_kmod-wireguard=y
-CONFIG_PACKAGE_kmod-ath11k=y
-CONFIG_PACKAGE_hostapd-utils=y
-CONFIG_PACKAGE_iwinfo=y
 #组件调整
 CONFIG_PACKAGE_autocore=y
 CONFIG_PACKAGE_automount=y
@@ -117,4 +104,3 @@ CONFIG_PACKAGE_usbmuxd=y
 CONFIG_PACKAGE_usbutils=y
 #添加cryptsetup解密cr1000a的p28分区
 CONFIG_PACKAGE_cryptsetup=y
-

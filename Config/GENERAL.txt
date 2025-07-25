@@ -1,15 +1,14 @@
 #科学插件调整
 CONFIG_PACKAGE_luci-app-homeproxy=y
-CONFIG_PACKAGE_luci-app-passwall=y
+#CONFIG_PACKAGE_luci-app-passwall=n
 # CONFIG_PACKAGE_luci-app-passwall2=n
 # CONFIG_PACKAGE_luci-app-nikki=n
-CONFIG_PACKAGE_luci-app-openclash=y
+#CONFIG_PACKAGE_luci-app-openclash=n
 # Docker 支持
 CONFIG_PACKAGE_dockerd=y
 CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_PACKAGE_kmod-overlayfs=y
 CONFIG_PACKAGE_kmod-veth=y
-CONFIG_PACKAGE_kmod-br-netfilter=y
 CONFIG_PACKAGE_kmod-libcgroup=y
 CONFIG_PACKAGE_kmod-nf-nat=y
 CONFIG_PACKAGE_kmod-nf-conntrack=y
@@ -31,13 +30,18 @@ CONFIG_DEVEL=y
 CONFIG_CCACHE=y
 CONFIG_TARGET_MULTI_PROFILE=y
 CONFIG_TARGET_PER_DEVICE_ROOTFS=y
-CONFIG_TARGET_ROOTFS_INITRAMFS=n
+CONFIG_TARGET_ROOTFS_INITRAMFS=y
+CONFIG_TARGET_IMAGES_GZIP=y
 # 网络驱动模块
-CONFIG_PACKAGE_kmod-wireguard=y
 CONFIG_PACKAGE_kmod-ath11k=y
-CONFIG_PACKAGE_hostapd-utils=y
-CONFIG_PACKAGE_iwinfo=y
-# 🎯 请将 board-2.bin 与 firmware-6.bin 放入 /lib/firmware/ath11k/IPQ9024/hw2.0/
+CONFIG_PACKAGE_ath11k-firmware=y
+CONFIG_PACKAGE_kmod-qcn9074=y
+#NSS 加速支持
+CONFIG_PACKAGE_kmod-qca-nss-drv=y
+CONFIG_PACKAGE_kmod-qca-nss-ecm=y
+CONFIG_PACKAGE_kmod-qca-nss-dp=y
+CONFIG_PACKAGE_kmod-qca-nss-cfi=y
+CONFIG_PACKAGE_kmod-qca-nss-crypto=y
 #内核调整
 CONFIG_PACKAGE_kmod-dsa=y
 CONFIG_PACKAGE_kmod-fs-btrfs=y
@@ -68,10 +72,10 @@ CONFIG_PACKAGE_kmod-usb-net-cdc-mbim=y
 CONFIG_PACKAGE_kmod-usb-net-cdc-ncm=y
 CONFIG_PACKAGE_kmod-usb-net-cdc-subset=y
 CONFIG_PACKAGE_kmod-usb-net-huawei-cdc-ncm=y
-CONFIG_PACKAGE_kmod-usb-net-ipheth=y
+#CONFIG_PACKAGE_kmod-usb-net-ipheth=n
 CONFIG_PACKAGE_kmod-usb-net-qmi-wwan=y
 CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-fibocom=y
-CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-quectel=y
+#CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-quectel=n
 CONFIG_PACKAGE_kmod-usb-net-rndis=y
 CONFIG_PACKAGE_kmod-usb-net-rtl8150=y
 CONFIG_PACKAGE_kmod-usb-net-rtl8152=y

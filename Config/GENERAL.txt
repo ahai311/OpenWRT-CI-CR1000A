@@ -1,9 +1,9 @@
 #科学插件调整
-CONFIG_PACKAGE_luci-app-homeproxy=n
+#CONFIG_PACKAGE_luci-app-homeproxy=n
 #CONFIG_PACKAGE_luci-app-passwall=n
 # CONFIG_PACKAGE_luci-app-passwall2=n
-# CONFIG_PACKAGE_luci-app-nikki=y
-#CONFIG_PACKAGE_luci-app-openclash=y
+CONFIG_PACKAGE_luci-app-nikki=y
+CONFIG_PACKAGE_luci-app-openclash=y
 # Docker 支持
 CONFIG_PACKAGE_dockerd=y
 CONFIG_PACKAGE_luci-app-dockerman=y

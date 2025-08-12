@@ -48,6 +48,7 @@ CONFIG_KERNEL_DEVMEM=y
 # 📦 容器支持（使用 Docker，移除 Podman）
 CONFIG_PACKAGE_docker=y
 CONFIG_PACKAGE_dockerd=y
+CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_PACKAGE_containerd=y
 CONFIG_PACKAGE_runc=y
 CONFIG_PACKAGE_tini=y
